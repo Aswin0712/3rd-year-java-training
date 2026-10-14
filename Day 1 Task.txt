@@ -1,0 +1,156 @@
+DAY 1 TASK--JAVA TRAINING--
+
+
+1.Personal Information
+-----------------------
+
+import java.util.Scanner;
+public class Personalinfo
+{
+    public static void main(String[] args)
+    {
+    Scanner S =new Scanner(System.in);
+    System.out.println("Enter your name: ");
+    String name =S.nextLine();
+    System.out.println("Enter your age: ");
+    int age = S.nextInt();
+    S.nextLine(); 
+    System.out.println("Enter your city: ");
+    String city = S.nextLine();
+
+    System.out.println("Enter your Name: " + name);
+    System.out.println("Enter your Age: " + age);
+    System.out.println("Enter your City: " + city);
+     
+
+    }
+}
+
+
+==========================================================================================================================
+
+2: Two-Number Calculator
+--------------------------
+
+import java.util.Scanner;
+public class Calc
+{
+public static void main(String[] args)
+{
+Scanner S=new Scanner(System.in);
+System.out.println("Enter the num1:");
+int num1=S.nextInt();
+System.out.println("Enter the num2:");
+int num2=S.nextInt();
+int Sum=num1+num2;
+System.out.println("Sum of the two numbers is:"+Sum);
+int Diff=num1-num2;
+System.out.println("Diff of the two numbers is:"+Diff);
+}
+} 
+
+==========================================================================================================================
+
+3: Rectangle Calculator
+------------------------
+
+import java.util.Scanner;
+public class Rectangle
+{
+    public static void main(String[] args)
+    {   
+    Scanner S=new Scanner(System.in);
+    System.out.println("Enter the length of rectangle");
+    int length=S.nextInt();
+    System.out.println("Enter the breadth of rectangle");
+    int breadth=S.nextInt();
+    int Area=length*breadth;
+    System.out.println("Area of rectangle is "+Area);
+    int Perimeter=2*(length+breadth);
+    System.out.println("Perimeter of rectangle is "+Perimeter);
+    }
+}
+
+==========================================================================================================================
+
+4: Student Marks
+-----------------
+
+import java.util.Scanner;
+public class marks
+{
+    public static void main(String[] args)
+    {
+        Scanner S=new Scanner(System.in);
+        System.out.print("Enter the marks in Tamil: ");
+        int Tamil=S.nextInt();
+        System.out.print("Enter the marks in English: ");
+        int English=S.nextInt();
+        System.out.print("Enter the marks in Maths: ");
+        int Maths=S.nextInt();  
+        System.out.print("Enter the marks in Science: ");
+        int Science=S.nextInt();    
+        System.out.print("Enter the marks in computer: ");
+        int Computer=S.nextInt();
+        int Total=Tamil+English+Maths+Science+Computer;
+        System.out.print("Total marks is: "+Total);
+        int Average=Total/5;
+        System.out.print("\nAverage marks is: "+Average);
+
+
+    }
+}
+
+==========================================================================================================================
+
+ 5: Employee Salary
+-------------------
+
+import java.util.Scanner;
+public class Salary
+{
+    public static void main(String[] args)
+    {
+        Scanner S=new Scanner(System.in);
+        System.out.printf("Enter the Employee name: ");
+        String name=S.nextLine();
+        System.out.printf("Enter the Basic Salary: ");
+        double Salary=S.nextDouble();
+        System.out.printf("Enter the Bonus: ");
+        double Bonus=S.nextDouble();
+        double TotalSalary=Salary+Bonus;
+        System.out.printf("Employee name is: "+name);
+        System.out.printf("\nTotal Salary is: %.2f", TotalSalary);   
+
+    }
+}
+
+==========================================================================================================================
+
+6: Swap Two Numbers
+-------------------
+
+import java.util.Scanner;
+public class Swap
+{
+    public static void main(String[] args)
+    {
+        Scanner S=new Scanner(System.in);
+        System.out.print("Enter the first number: ");
+        int a=S.nextInt();
+        System.out.print("Enter the second number: ");
+        int b=S.nextInt();
+        System.out.println("Before swapping: ");
+        System.out.println("a= "+a);
+        System.out.println("b= "+b);
+        int swap=a;
+        a=b;
+        b=swap;
+        System.out.println("After swapping: ");
+        System.out.println("a= "+a);
+        System.out.println("b= "+b);
+    }
+}
+    
+
+==========================================================================================================================
