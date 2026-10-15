@@ -1,0 +1,297 @@
+1.ifstatement
+---------------
+
+public class ifstatement
+{
+    public static void main(String[] args)
+    {
+        //number is greater than 100
+        int a=150;
+        int age=20;
+        if(a>100)
+        {
+            System.out.println(" a is greater");
+
+        }
+
+        // score atleast 50 marks
+
+        if(a>=50)
+        {
+            System.out.println("student score 50 above");
+
+        }
+
+        //number is divisible by 5
+
+        if(a%5==0)
+        {
+            System.out.println("it is divisible by 5");
+
+        }
+
+        //eligible to vote
+
+        if(age>=18)
+        {
+            System.out.println("eligible to vote");
+        }
+
+
+    }
+}
+
+=======================================================================================================================================================================
+
+
+2.else_if
+----------
+
+public class elseif
+{
+    public static void main(String[] args)
+    {
+    
+    //positive or not positive
+    int a=12;
+    if(a>0)
+    {
+        System.out.println("a is positive");
+    }
+    else
+    {
+        System.out.println("a is negative");
+    }
+
+    //even or odd
+
+    if(a%2==0)
+    {
+        System.out.println("a is even");
+    }
+    else
+    {
+        System.out.println("a is odd");
+
+    }
+
+    //passing mark
+
+    int mark=98;
+    if (mark>=40)
+    {
+        System.out.println("PASS");
+
+    }
+    else
+    {
+        System.out.println("FAIL");
+    }
+
+    //greater of two numbers
+
+    int b=20;
+    if(a>b)
+    {
+        System.out.println("a is greater");
+    }
+    else
+    {
+        System.out.println("b is greater");
+    }
+
+    //eligible to vote
+    int age=20;
+    if(age>=18)
+        {
+            System.out.println("eligible to vote");
+        }
+        else
+        {
+            System.out.println("not eligible");
+        }
+
+
+
+
+    }
+    
+
+    
+}
+
+
+=======================================================================================================================================================================
+
+3.grade
+---------
+
+import java.util.*;
+public class grade
+{
+    public static void main(String[] args)
+    {
+        int marks = 34;
+        if(marks>=90)
+        {
+            System.out.println("A grade");
+        }
+        else if(marks>=80)
+        {
+            System.out.println("B grade");
+        }
+        else if(marks>=70)
+        {
+            System.out.println("C grade");
+        }
+        else if(marks>=60)
+        {
+            System.out.println("D grade");
+        }
+        else
+        {
+            System.out.println("Fail");
+        }
+    }
+}
+
+
+
+=======================================================================================================================================================================
+
+4.positive ,negative ,zero
+--------------------------
+
+import java.util.*;
+public class posnegzero
+{
+    public static void main(String[] args)
+    {
+        int num = 0;
+        if(num>0)
+        {
+            System.out.println("Positive");
+        }
+        else if(num<0)
+        {
+            System.out.println("Negative");
+        }
+        else
+        {
+            System.out.println("Zero");
+        }
+    }
+}
+
+
+=======================================================================================================================================================================
+
+
+5.age category
+----------------
+
+import java.util.*;
+public class agecat
+{
+    public static void main(String[] args)
+    {
+        int age = 34;
+        if(age>=0 && age<=12)
+        {
+            System.out.println("Child");
+        }
+        else if(age>=13 && age<=19)
+        {
+            System.out.println("Teenager");
+        }
+        else if(age>=20 && age<=59)
+        {
+            System.out.println("Adult");
+        }
+        else if(age>=60)
+        {
+            System.out.println("Senior Citizen");
+        }
+    }
+}
+
+
+=======================================================================================================================================================================
+
+6.operation
+-------------
+
+import java.util.*;
+import java.util.Scanner;
+public class operation
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("first number: ");
+        int a = sc.nextInt();
+        System.out.println("second number: ");
+        int b = sc.nextInt();
+        System.out.println("Operations on (+, -, *, /) are: ");
+        String op = sc.next();
+
+        if(op.equals("+"))
+        {
+            System.out.println("Addition: "+(a+b));
+        }
+        else if(op.equals("-"))
+        {
+            System.out.println("Subtraction: "+(a-b));
+        }
+        else if(op.equals("*"))
+        {
+            System.out.println("Multiplication: "+(a*b));
+        }
+        else if(op.equals("/"))
+        {
+            System.out.println("Division: "+(a/b));
+        }
+        else
+        {
+            System.out.println("Invalid operation");
+        }
+    }
+}
+
+
+
+=======================================================================================================================================================================
+
+7.login
+--------
+
+import java.util.*;
+public class log
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter username: ");
+        String username = sc.next();
+        System.out.println("Enter password: ");
+        String password = sc.next();
+
+        if(username.equals("admin"))
+        {
+            if(password.equals("admin123"))
+            {
+                System.out.println("Login successful");
+            }
+            else
+            {
+                System.out.println("Invalid password");
+            }
+        }
+        else
+        {
+            System.out.println("Invalid username");
+        }
+    }
+}
+
+=======================================================================================================================================================================
